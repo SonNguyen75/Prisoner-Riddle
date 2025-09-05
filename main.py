@@ -42,11 +42,11 @@ def main():
                 num_of_runs_failed += 1
                 break
     
-    print("Number of runs succeed: " + str(num_simulations - num_of_runs_failed))
-    print("Number of runs failed: " + str(num_of_runs_failed))
+    print("Number of succesful runs: " + str(num_simulations - num_of_runs_failed))
+    print("Number of failed runs: " + str(num_of_runs_failed))
 
     probability_of_succeeding = (num_simulations - num_of_runs_failed) / num_simulations
-    print("Probability that the prisoner succeed clearing the challenge is: " + str(probability_of_succeeding))
+    print("Probability of success: " + str(probability_of_succeeding*100) + "%")
  
                
 if __name__ == "__main__":
