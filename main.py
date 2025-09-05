@@ -44,9 +44,9 @@ def main():
     
     print("Number of succesful runs: " + str(num_simulations - num_of_runs_failed))
     print("Number of failed runs: " + str(num_of_runs_failed))
-
-    probability_of_succeeding = (num_simulations - num_of_runs_failed) / num_simulations
-    print("Probability of success: " + str(probability_of_succeeding*100) + "%")
+ 
+    probability = (num_simulations - num_of_runs_failed) / num_simulations * 100
+    print(f"Probability of success: {probability:.4f}%")
  
                
 if __name__ == "__main__":
