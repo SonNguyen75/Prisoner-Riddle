@@ -5,7 +5,7 @@ The simulation calculates the probability that all prisoners can find their own 
 The aim for the program is to see how a unique and unconventional strategy can improve the odd of sucessful dramatically when compared to just choosing randomly.
 This program is inspired by a video by Veritasium
 
-[text](https://www.youtube.com/watch?v=iSNsgj1OCLA)
+[Link To Veritasium Video](https://www.youtube.com/watch?v=iSNsgj1OCLA)
 
 ---
 
@@ -24,6 +24,15 @@ This program is inspired by a video by Veritasium
 
 ---
 
+## How It Works
+
+1. Each prisoner is allowed to open half of the boxes.
+2. Each prisoner starts by opening the box labeled with their number.
+3. If the prisoner does not find their slip, they follow the number on the slip they just found.
+4. If any prisoner fails to find their slip, the run fails.
+
+---
+
 ## How to Run
 
 1. Clone the repository or download the `.py` file.  
@@ -32,12 +41,13 @@ This program is inspired by a video by Veritasium
 python3 your_file_name.py
 4. Enter the requested inputs:
     - Number of prisoners
-
-- Number of simulation runs
+    - Number of simulations
 5. The program will output:
     - Number of sucessful runs
     - Number of failed runs
     - Estimated probability of success
+
+---
 
 ## Example Output
 Enter number of prisoners (preferably multiple of 10): 10
@@ -46,10 +56,5 @@ Number of runs succeeded: 307
 Number of runs failed: 693
 Probability of success: 0.3070
 
-## How It Works
 
-1. Each prisoner is allowed to open half of the boxes.
-2. Each prisoner starts by opening the box labeled with their number.
-3. If the prisoner does not find their slip, they follow the number on the slip they just found.
-4. If any prisoner fails to find their slip, the run fails.
 
